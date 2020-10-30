@@ -27,7 +27,7 @@ export default {
     },
     methods: {
       removeElement: function (lesson) {
-      this.lessons.splice(lesson);
+      this.lessons.splice(lesson);  // removeElement is not a function?
     }
     }
   },
