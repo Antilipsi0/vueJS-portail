@@ -11,10 +11,10 @@
         :key="lesson.name" 
         class="border my-4 p-2 text-white"
       >
-        <h3>{{ lesson.name }} ({{ lesson.date }})</h3>
+        <h3 class="text-lg text-white font-bold">{{ lesson.name }} <br> ({{ lesson.date }})</h3>
         <span>Commence à {{ lesson.time }} jusqu'à {{ lesson.time2 }}</span>
         <p>{{ lesson.description }}</p>
-        <img :src="require('../assets/img/' + lesson.photo)" alt="">
+        <img :src="require('../assets/img/' + lesson.photo)" class="container w-8 text center mx-auto mt-4" alt="">
         
       </div>
     </div>

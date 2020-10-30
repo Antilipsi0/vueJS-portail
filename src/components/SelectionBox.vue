@@ -5,10 +5,10 @@
     <span v-else>cours ajoutés</span>
     <br>
     <ul>
-      <li v-for="lesson in selection" :key="lesson.name">{{ lesson.name }}</li>
+      <li v-for="lesson in selection" :key="lesson.name">{{ lesson.name }}   
+    </li>  
+       <button class="border rounded bg-orange-600 m-2 p-2" v-on:click="removeElement(lesson)">Supprimer</button>
     </ul>
-
-  
 
   </div>
   
@@ -25,13 +25,12 @@ export default {
       }
       return false
     },
-    hourSelection(){
-      if(this.selection.length < 2){
-        return true
-      }
-      return false
+    methods: {
+      removeElement: function (lesson) {
+      this.lessons.splice(lesson);
     }
-  }
+    }
+  },
 }
 </script>
 

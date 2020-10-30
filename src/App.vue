@@ -49,7 +49,7 @@ export default {
     },
     selectionUpdate(value) {
       this.lessonSelection.push(value)
-    }
+    },
   }
 }
 </script>

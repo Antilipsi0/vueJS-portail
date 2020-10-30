@@ -44,6 +44,9 @@ export default {
     addLessonToSelection(lesson){
       this.selection.push(lesson)
       this.$emit('child-event', lesson)
+    },
+    removeLessonToSelection(lesson){
+      this.selection.reverse(lesson)
     }
   }
 }
